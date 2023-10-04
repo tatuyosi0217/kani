@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蟹の販売</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>蟹の楽園</h1>
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">商品一覧</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>新鮮な蟹をお届けします</h2>
+            <p>直接漁師から仕入れた新鮮な蟹をお届けします。</p>
+        </section>
+        <section id="products">
+            <!-- 商品リスト -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 蟹の楽園. All rights reserved.</p>
+    </footer>
+</body>
+</html>
