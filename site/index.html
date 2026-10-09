@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="金融・経済・地政学・科学・量子の世界のニュースを日本語で一覧できるニュースデスク">
+  <title>ワールド・ニュースデスク</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>ワールド・ニュースデスク</h1>
+        <p class="updated" id="updated">読み込み中…</p>
+      </div>
+      <div class="controls">
+        <label class="search">
+          <span class="visually-hidden">記事を検索</span>
+          <input id="search" type="search" placeholder="キーワードで絞り込み" autocomplete="off" maxlength="100">
+        </label>
+        <label class="toggle">
+          <input id="show-original" type="checkbox">
+          <span>原文も表示</span>
+        </label>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="カテゴリ"></nav>
+  </header>
+
+  <main id="main">
+    <section id="ticker" class="ticker" aria-label="主要マーケット"></section>
+
+    <section id="view-news" class="view">
+      <div class="filters" id="filters"></div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <ol class="news-list" id="news-list"></ol>
+      <button class="more" id="more" type="button" hidden>さらに表示</button>
+    </section>
+
+    <section id="view-markets" class="view" hidden>
+      <div class="chart-panel">
+        <div class="chart-head">
+          <div>
+            <h2 id="chart-title">マーケット</h2>
+            <p class="chart-quote" id="chart-quote"></p>
+          </div>
+          <div class="ranges" id="ranges" role="group" aria-label="表示期間"></div>
+        </div>
+        <div class="chart-wrap" id="chart-main"></div>
+        <p class="chart-note" id="chart-note"></p>
+      </div>
+      <div class="market-grid" id="market-grid"></div>
+    </section>
+
+    <section id="view-status" class="view" hidden>
+      <h2>取得元の状況</h2>
+      <p id="translation-status" class="status-summary"></p>
+      <div class="table-wrap">
+        <table class="status-table">
+          <thead><tr><th>取得元</th><th>種別</th><th>カテゴリ</th><th>状態</th><th>件数</th></tr></thead>
+          <tbody id="status-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>見出し・要約は各報道機関の RSS / GDELT から自動取得し、機械翻訳しています。正確な内容は必ずリンク先の原文で確認してください。市場データは遅延・欠損することがあり、投資判断の根拠にはなりません。</p>
+  </footer>
+  <noscript><p class="noscript">このサイトの表示には JavaScript が必要です。</p></noscript>
+</body>
+</html>

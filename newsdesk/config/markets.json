@@ -1,0 +1,20 @@
+{
+  "_comment": "yahoo: Yahoo Finance のシンボル / stooq: 取得失敗時の代替シンボル",
+  "instruments": [
+    {"id": "nikkei", "name": "日経平均", "group": "株価指数", "yahoo": "^N225", "stooq": "^nkx"},
+    {"id": "sp500", "name": "S&P 500", "group": "株価指数", "yahoo": "^GSPC", "stooq": "^spx"},
+    {"id": "nasdaq", "name": "ナスダック総合", "group": "株価指数", "yahoo": "^IXIC", "stooq": "^ndq"},
+    {"id": "dow", "name": "NYダウ", "group": "株価指数", "yahoo": "^DJI", "stooq": "^dji"},
+    {"id": "dax", "name": "独DAX", "group": "株価指数", "yahoo": "^GDAXI", "stooq": "^dax"},
+    {"id": "ftse", "name": "英FTSE 100", "group": "株価指数", "yahoo": "^FTSE", "stooq": "^ukx"},
+    {"id": "hsi", "name": "香港ハンセン", "group": "株価指数", "yahoo": "^HSI", "stooq": "^hsi"},
+    {"id": "shanghai", "name": "上海総合", "group": "株価指数", "yahoo": "000001.SS", "stooq": "^shc"},
+    {"id": "usdjpy", "name": "ドル/円", "group": "為替", "yahoo": "JPY=X", "stooq": "usdjpy"},
+    {"id": "eurjpy", "name": "ユーロ/円", "group": "為替", "yahoo": "EURJPY=X", "stooq": "eurjpy"},
+    {"id": "eurusd", "name": "ユーロ/ドル", "group": "為替", "yahoo": "EURUSD=X", "stooq": "eurusd"},
+    {"id": "us10y", "name": "米10年債利回り", "group": "金利", "yahoo": "^TNX", "stooq": "10usy.b"},
+    {"id": "gold", "name": "金先物", "group": "商品", "yahoo": "GC=F", "stooq": "gc.f"},
+    {"id": "wti", "name": "WTI原油先物", "group": "商品", "yahoo": "CL=F", "stooq": "cl.f"},
+    {"id": "btc", "name": "ビットコイン (USD)", "group": "暗号資産", "yahoo": "BTC-USD", "stooq": "btcusd"}
+  ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# 実行時に生成されるデータ(Actionsのキャッシュとして保持)
+state/
+site/data/

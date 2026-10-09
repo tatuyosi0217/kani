@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Quantum Feed</title>
+  <entry>
+    <title>New qubit record</title>
+    <link href="https://quantum.example.org/qubit-record"/>
+    <updated>2026-10-09T08:30:00Z</updated>
+    <summary type="html">&lt;p&gt;Researchers achieved 99.9% fidelity.&lt;/p&gt;</summary>
+  </entry>
+</feed>

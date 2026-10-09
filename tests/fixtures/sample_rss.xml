@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Sample Feed</title>
+  <item>
+    <title>Central bank &lt;b&gt;holds&lt;/b&gt; rates steady</title>
+    <link>https://example.com/news/rates?utm_source=rss&amp;id=1</link>
+    <description><![CDATA[<p>The bank <script>alert(1)</script>kept rates at 5%.<img src=x onerror=alert(2)></p>]]></description>
+    <pubDate>Fri, 09 Oct 2026 10:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Malicious link</title>
+    <link>javascript:alert(document.cookie)</link>
+    <description>bad</description>
+    <pubDate>Fri, 09 Oct 2026 09:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Very old story</title>
+    <link>https://example.com/news/old</link>
+    <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>No date story</title>
+    <link>https://example.com/news/nodate</link>
+  </item>
+</channel>
+</rss>
